@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <div>
@@ -10,7 +8,6 @@ const Footer = () => {
               <h1 className="font-bold text-4xl">Hekto</h1>
               <input
                 type="email"
-                // value="Enter Email Address"
                 className="mt-7 p-2 text-gray-400"
               />
               <button className="bg-pink-500 text-white px-4 p-2">

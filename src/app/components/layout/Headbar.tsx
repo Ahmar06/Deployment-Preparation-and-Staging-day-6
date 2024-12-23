@@ -13,8 +13,6 @@ export default function Headingbar(){
                 <p>Wishlist</p>
                 
             </div>
-            {/* <div>
-            </div> */}
         </div>
     )
 }

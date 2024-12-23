@@ -5,9 +5,11 @@ export default function Home() {
     <div>
       <div className="bg-purple-100 flex w-[1425px] h-[600px] ">
         <div className="">
-          <img
+          <Image
             src="/image/hanging lamp.png"
             alt="picture"
+            width={387}
+            height={350}
             className="h-[350px] w-[387px] flex top-32 ml-16"
           />
         </div>
@@ -30,9 +32,11 @@ export default function Home() {
         </div>
         <div>
           <div className=" bg-purple-200 rounded-full">
-            <img
+            <Image
               src="/image/promotion.png"
-              alt=""
+              alt="pic"
+              width={600}
+              height={0}
               className="mt-28 -ml-10 w-[600px]"
             />
           </div>
@@ -50,9 +54,11 @@ export default function Home() {
         <div className="flex mt-5 justify-center gap-x-16 ">
           <div className="bg-white-600 h-[250px] w-[180px] border shadow-xl  ">
             <div className="h-[150px] w-[180px] bg-gray-200 content-center place-items-center">
-              <img
+              <Image
                 src="/image/feature1.png"
                 alt="product"
+                width={120}
+                height={0}
                 className="w-[120px] "
               />
             </div>
@@ -66,9 +72,11 @@ export default function Home() {
           </div>
           <div className="bg-white-600 h-[250px] w-[180px] border shadow-xl items-center">
             <div className="h-[150px] w-[180px] bg-gray-200 content-center place-items-center">
-              <img
+              <Image
                 src="/image/feature2.png"
                 alt="product"
+                width={120}
+                height={0}
                 className="w-[120px] "
               />
             </div>
@@ -82,9 +90,11 @@ export default function Home() {
           </div>
           <div className="bg-white-600 h-[250px] w-[180px] border shadow-xl items-center">
             <div className="h-[150px] w-[180px] bg-gray-200 content-center place-items-center">
-              <img
+              <Image
                 src="/image/feature3.png"
                 alt="product"
+                width={120}
+                height={0}
                 className="w-[120px] "
               />
             </div>
@@ -98,9 +108,11 @@ export default function Home() {
           </div>
           <div className="bg-white-600 h-[250px] w-[180px] border shadow-xl items-center">
             <div className="h-[150px] w-[180px] bg-gray-200 content-center place-items-center">
-              <img
+              <Image
                 src="/image/feature4.png"
                 alt="product"
+                width={120}
+                height={0}
                 className="w-[120px] "
               />
             </div>
@@ -132,9 +144,11 @@ export default function Home() {
         <div className="flex justify-center mt-3 gap-10">
           <div className="bg-white mt-10 h-[280px] w-[280px] border shadow-2xl justify-items-center">
             <div className="bg-gray-200 w-[280px] h-[230px] content-center place-items-center">
-              <img
+              <Image
                 src="/image/latest1.png"
                 alt="picture"
+                width={150}
+                height={0}
                 className="w-[150px]"
               />
             </div>
@@ -146,9 +160,11 @@ export default function Home() {
           </div>
           <div className="bg-white mt-10 h-[280px] w-[280px] border shadow-2xl justify-items-center">
             <div className="bg-gray-200 w-[280px] h-[230px] content-center place-items-center">
-              <img
+              <Image
                 src="/image/latest2.png"
                 alt="picture"
+                width={150}
+                height={0}
                 className="w-[150px]"
               />
             </div>
@@ -160,9 +176,11 @@ export default function Home() {
           </div>
           <div className="bg-white mt-10 h-[280px] w-[280px] border shadow-2xl justify-items-center">
             <div className="bg-gray-200 w-[280px] h-[230px] content-center place-items-center">
-              <img
+              <Image
                 src="/image/latest3.png"
                 alt="picture"
+                width={150}
+                height={0}
                 className="w-[150px]"
               />
             </div>
@@ -176,9 +194,11 @@ export default function Home() {
         <div className="flex justify-center mt-6 gap-10">
           <div className="bg-white mt-10 h-[280px] w-[280px] border shadow-2xl justify-items-center">
             <div className="bg-gray-200 w-[280px] h-[230px] content-center place-items-center">
-              <img
+              <Image
                 src="/image/latest4.png"
                 alt="picture"
+                width={150}
+                height={0}
                 className="w-[150px]"
               />
             </div>
@@ -190,9 +210,11 @@ export default function Home() {
           </div>
           <div className="bg-white mt-10 h-[280px] w-[280px] border shadow-2xl justify-items-center">
             <div className="bg-gray-200 w-[280px] h-[230px] content-center place-items-center">
-              <img
+              <Image
                 src="/image/latest5.png"
                 alt="picture"
+                width={150}
+                height={0}
                 className="w-[150px]"
               />
             </div>
@@ -204,9 +226,11 @@ export default function Home() {
           </div>
           <div className="bg-white mt-10 h-[280px] w-[280px] border shadow-2xl justify-items-center">
             <div className="bg-gray-200 w-[280px] h-[230px] content-center place-items-center">
-              <img
+              <Image
                 src="/image/latest6.png"
                 alt="picture"
+                width={150}
+                height={0}
                 className="w-[150px]"
               />
             </div>
@@ -223,9 +247,11 @@ export default function Home() {
           <div className="w-[800px] h-[400px] bg-purple-100 flex  place-items-center">
             <div>
               <div className="bg-purple-200 rounded-full">
-                <img
+                <Image
                   src="/image/promotion2.png"
                   alt="promotion"
+                  width={300}
+                  height={0}
                   className="w-[300px] m-20 ml-2"
                 />
               </div>
@@ -269,9 +295,11 @@ export default function Home() {
         <div className=" flex justify-center mt-7 gap-12">
           <div className="bg-white-600 h-[250px] w-[190px] p-1 border shadow-xl items-center">
             <div className="h-[150px] w-[180px] bg-gray-300 content-center place-items-center">
-              <img
+              <Image
                 src="/image/latest1.png"
                 alt="product"
+                width={120}
+                height={0}
                 className="w-[120px] "
               />
             </div>
@@ -285,9 +313,11 @@ export default function Home() {
           </div>
           <div className="bg-white-600 h-[250px] w-[190px] p-1 border shadow-xl items-center">
             <div className="h-[150px] w-[180px] bg-gray-300 content-center place-items-center">
-              <img
+              <Image
                 src="/image/latest5.png"
                 alt="product"
+                width={120}
+                height={0}
                 className="w-[120px] "
               />
             </div>
@@ -301,9 +331,11 @@ export default function Home() {
           </div>
           <div className="bg-white-600 h-[250px] w-[190px] p-1 border shadow-xl items-center">
             <div className="h-[150px] w-[180px] bg-gray-300 content-center place-items-center">
-              <img
+              <Image
                 src="/image/trending2.png"
                 alt="product"
+                width={120}
+                height={0}
                 className="w-[120px] "
               />
             </div>
@@ -379,7 +411,9 @@ export default function Home() {
                 </div>
               <div className="flex mt-2 gap-3 items-center">
                 <div className="w-[80px] h-[80px] bg-slate-200">
-                  <img src="/image/trending7.png" alt="product"
+                  <Image src="/image/trending7.png" alt="product"
+                  width={100}
+                  height={0}
                   className="w-[100px]" />
                 </div>
                 <div>
