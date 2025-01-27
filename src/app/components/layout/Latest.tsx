@@ -4,6 +4,14 @@ import Image from 'next/image'
 import React, { useEffect, useState } from "react";
 import { client } from "@/sanity/lib/client"; // Install and configure Sanity client
 
+interface iProduct {
+  discountPercentage:number;
+  image: any;
+  description:string;
+  name: string;
+  price: number;
+  id: number;
+}
 const LatestProducts = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -62,7 +70,7 @@ const LatestProducts = () => {
         </button>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 px-6">
-        {products.map((product: any) => (
+        {products.map((product:iProduct) => (
           <div
             key={product.id}
             className="bg-white shadow-md border rounded-lg overflow-hidden"
