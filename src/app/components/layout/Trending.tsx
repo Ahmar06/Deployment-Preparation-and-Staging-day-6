@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { client } from '@/sanity/lib/client';
 import { iproduct } from '@/sanity/type/iproduct';
