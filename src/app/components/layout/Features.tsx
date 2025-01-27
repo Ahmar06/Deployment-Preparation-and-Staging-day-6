@@ -56,7 +56,7 @@ const Features = () => {
           <div className='bg-gray-200 place-items-center content-center'>
           <Image
             className="w-56 h-48 bg-gray-200 "
-            src={product.image?.asset?.url}
+            src={product.imageUrl}
             alt={product.name}
             width={0}
             height={0}
