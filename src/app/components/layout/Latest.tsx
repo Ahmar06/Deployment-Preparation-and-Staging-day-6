@@ -1,5 +1,5 @@
 "use client";
-// import Image from 'next/image'
+import Image from 'next/image'
 // import React from 'react'
 
 import React, { useEffect, useState } from "react";
@@ -9,15 +9,8 @@ const LatestProducts = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Initialize the Sanity client
-  // const client = sanityClient({
-  //   projectId: 'yourProjectId', // Replace with your Sanity project ID
-  //   dataset: 'production', // Replace with your dataset name
-  //   useCdn: true,
-  // });
 
   useEffect(() => {
-    // Fetch products from Sanity
     client
       .fetch(
         `*[_type == "product"][3..8]{
@@ -44,12 +37,11 @@ const LatestProducts = () => {
       });
   }, []);
 
-  // if (loading) {
-  //   return <div>Loading products...</div>;
-  // }
 
   return (
-    <div className="container mx-auto my-8">
+    <div>
+
+    <div className="my-8">
       <h2 className="text-3xl font-bold text-center text-blue-900 mb-4">
         Latest Products
       </h2>
@@ -99,10 +91,57 @@ const LatestProducts = () => {
         ))}
       </div>
     </div>
+    <div className="w-[1425px] h-[400px] bg-purple-100 mt-24 flex justify-evenly">
+             <div className="w-[800px] h-[400px] bg-purple-100 flex  place-items-center">
+               <div>
+                 <div className="bg-purple-200 rounded-full">
+                   <Image
+                     src="/image/promotion2.png"
+                     alt="promotion"
+                     width={300}
+                     height={0}
+                     className="w-[300px] m-20 ml-2 hover:scale-110"
+                   />
+                 </div>
+               </div>
+               <div className="ml-7">
+                 <h1 className="font-bold text-3xl">
+                   Unique Features Of leatest & Trending Poducts
+                 </h1>
+                 <div className="mt-4">
+                   <p className="text-gray-400">
+                     All frames constructed with hardwood solids and laminates
+                   </p>
+                   <p className="text-gray-400 mt-1">
+                     Reinforced with double wood dowels, glue, screw - nails corner
+                     blocks and machine nails
+                   </p>
+                   <p className="text-gray-400 mt-1">
+                     Arms, backs and seats are structurally reinforced
+                   </p>
+                 </div>
+                 <div className="flex mt-6">
+                   <div>
+                     <button className="bg-pink-600 px-6 py-2 hover:bg-pink-500">
+                       Add To Cart
+                     </button>
+                   </div>
+                   <div className="ml-12 ">
+                     <p className="text-sm">B&B Italian Sofa </p>
+                     <p className="text-sm">$32.00</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+    </div>
   );
 };
 
 export default LatestProducts;
+
+
+
 
 // const Latest = () => {
 //   return (

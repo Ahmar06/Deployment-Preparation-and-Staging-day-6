@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Headingbar(){
     return(
@@ -9,7 +10,7 @@ export default function Headingbar(){
             <div className="flex gap-4 text-white">
                 <p>English</p>
                 <p>USD</p>
-                <p>Login</p>
+                <p><Link href="/login">Login</Link></p>
                 <p>Wishlist</p>
                 
             </div>

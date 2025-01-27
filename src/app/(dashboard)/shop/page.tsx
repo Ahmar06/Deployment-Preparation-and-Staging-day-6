@@ -108,7 +108,7 @@ export default async function ShopGrid() {
   const data = await getData();
   return (
     <div className="bg-gray-50 min-h-screen">
-      <section className="bg-gray-100 py-6">
+      <section className="bg-gray-100 py-6 h-40">
         <div className="container mx-auto px-6">
           <h2 className="text-xl font-semibold">Shop Grid Default</h2>
           <p className="text-sm text-pink-500">
