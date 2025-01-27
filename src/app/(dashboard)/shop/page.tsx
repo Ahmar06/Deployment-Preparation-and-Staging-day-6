@@ -1,6 +1,8 @@
 import React from "react";
 import { client } from '@/sanity/lib/client';
 import Image from "next/image";
+import { iproduct } from "@/sanity/type/iproduct";
+
 
 async function getData() {
   return await client.fetch(
@@ -38,7 +40,7 @@ export default async function ShopGrid() {
           </h3>
         </div>
         <div className="grid grid-cols-4 gap-6 mt-8 mb-24">
-          {data.map((product:any) => (
+          {data.map((product:iproduct) => (
             <div
               key={product.id}
               className="shadow-md  rounded-md  justify-items-center"

@@ -3,6 +3,16 @@ import React, { useEffect, useState } from 'react';
 import {client} from '@/sanity/lib/client'; 
 import Image from 'next/image';
 
+interface iProduct {
+  category:string;
+  discountPercentage:number;
+  image: any;
+  description:string;
+  name: string;
+  price: number;
+  id: number;
+}
+
 const Features = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -47,7 +57,7 @@ const Features = () => {
     <div className='flex justify-center'>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 mt-10 pl-6 ml-56">
-      {products.map((product:any) => (
+      {products.map((product:iProduct) => (
         <div
         key={product.id}
           className="bg-white shadow-md border rounded-lg">

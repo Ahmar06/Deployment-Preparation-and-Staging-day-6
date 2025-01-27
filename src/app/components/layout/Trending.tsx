@@ -1,7 +1,9 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { client } from '@/sanity/lib/client';
+import { iproduct } from '@/sanity/type/iproduct';
+
 
 async function getData() {
   return await client.fetch(
@@ -27,7 +29,7 @@ const Trending = async () => {
         <h1 className="font-bold text-4xl text-blue-900">Trending Products</h1>
       </div>
       <div className="flex justify-center flex-wrap mt-7 gap-12 mb-20">
-        {data.map((product:any) => (
+        {data.map((product:iproduct) => (
           <div
             key={product.name}
             className="bg-white-600 h-[300px] w-[200px] p-1 border shadow-xl items-center"

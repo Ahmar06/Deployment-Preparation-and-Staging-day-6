@@ -1,21 +1,13 @@
 "use client";
 import Image from 'next/image'
-
+import { iproduct } from '@/sanity/type/iproduct';
 import React, { useEffect, useState } from "react";
 import { client } from "@/sanity/lib/client"; // Install and configure Sanity client
 
-interface iProduct {
-  discountPercentage:number;
-  image: any;
-  description:string;
-  name: string;
-  price: number;
-  id: number;
-}
-const LatestProducts = () => {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
 
+const LatestProducts = () => {
+  const [product, setProduct] = useState([]);
+  
 
   useEffect(() => {
     client
@@ -35,18 +27,14 @@ const LatestProducts = () => {
       }`
       )
       .then((data) => {
-        setProducts(data);
-        setLoading(false);
+        setProduct(data);
       })
       .catch((error) => {
         console.error("Error fetching products:", error);
-        setLoading(false);
       });
   }, []);
 
-  if (loading) {
-    return <div className='font-bold  text-center'></div>;
-  }
+
 
   return (
     <div>
@@ -70,7 +58,7 @@ const LatestProducts = () => {
         </button>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 px-6">
-        {products.map((product:iProduct) => (
+        {product.map((product:iproduct) => (
           <div
             key={product.id}
             className="bg-white shadow-md border rounded-lg overflow-hidden"
@@ -78,7 +66,7 @@ const LatestProducts = () => {
             <div className="bg-gray-200 place-items-center content-center">
               <Image
                 className="w-50 h-48"
-                src={product.image?.asset?.url}
+                src={product.imageUrl}
                 alt={product.name}
                 width={0}
                 height={0}
