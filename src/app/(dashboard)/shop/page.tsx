@@ -1,5 +1,6 @@
 import React from "react";
 import { client } from '@/sanity/lib/client';
+import Image from "next/image";
 
 async function getData() {
   return await client.fetch(
@@ -43,9 +44,11 @@ export default async function ShopGrid() {
               className="shadow-md  rounded-md  justify-items-center"
             >
               <div className="h-56 w-56  justify-items-center content-center bg-gray-200">
-                <img
+                <Image
                   src={product.imageUrl}
                   alt={product.name}
+                  height={0}
+                  width={0}
                   className=" h-36 w-36 hover:scale-110"
                 />
               </div>

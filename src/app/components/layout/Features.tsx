@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import {client} from '@/sanity/lib/client'; 
+import Image from 'next/image';
 
 const Features = () => {
   const [products, setProducts] = useState([]);
@@ -51,10 +52,12 @@ const Features = () => {
         key={product.id}
           className="bg-white shadow-md border rounded-lg">
           <div className='bg-gray-200 place-items-center content-center'>
-          <img
+          <Image
             className="w-56 h-48 bg-gray-200 "
             src={product.image?.asset?.url}
             alt={product.name}
+            width={0}
+            height={0}
             />
             </div>
           <div className="p-4">

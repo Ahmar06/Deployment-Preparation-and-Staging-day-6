@@ -36,6 +36,9 @@ const LatestProducts = () => {
       });
   }, []);
 
+  if (loading) {
+    return <div className='font-bold  text-center'></div>;
+  }
 
   return (
     <div>
@@ -65,10 +68,12 @@ const LatestProducts = () => {
             className="bg-white shadow-md border rounded-lg overflow-hidden"
           >
             <div className="bg-gray-200 place-items-center content-center">
-              <img
+              <Image
                 className="w-50 h-48"
                 src={product.image?.asset?.url}
                 alt={product.name}
+                width={0}
+                height={0}
               />
             </div>
             <div className="p-4">
